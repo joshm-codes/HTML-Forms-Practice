@@ -67,17 +67,17 @@
             <form method="POST">
                 <div>
                     <label for="booking_date">Booking Date:</label>
-                    <input type="date" id="booking_date" name="booking_date">
+                    <input type="date" id="booking_date" name="booking_date"> <!--type="date" -> date picker-->
                 </div>
                 <div>
                     <label for="booking_people">Number of People:</label>
-                    <input type="range" id="booking_people" name="booking_people" min="1" max="10" value="4" oninput="this.nextElementSibling.value =this.value">
-                    <output>4</output>
+                    <input type="range" id="booking_people" name="booking_people" min="1" max="10" value="4" oninput="this.nextElementSibling.value =this.value"> <!--type="range" ->slider (oninput - JS to adjust slider values)-->
+                    <output>4</output><!--default value for slider-->
                 </div>
                 <div>
                     <label for="booking_location">Location:</label>
                     <input id="booking_location" name="booking_location" list="locations">
-                    <datalist id="locations">
+                    <datalist id="locations"> <!--autocomplete suggestions-->
                         <option value="Eastside"></option>
                         <option value="Westend"></option>
                         <option value="Dupont Square"></option>
