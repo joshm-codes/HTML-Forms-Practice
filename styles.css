@@ -23,6 +23,7 @@ button{
     padding: 5px;
     border-radius: 5px;
     margin-top: 10px;
+    margin-bottom: 15px;
     transition: transform 0.2s ease;
 }
 button:hover{
