@@ -17,4 +17,16 @@ button{
     font: 1em sans-serif;
     padding: 5px;
     border-radius: 5px;
+    transition: transform 0.2s ease;
+}
+button:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    background-color: lightgray;
+}
+input:invalid{
+    border: 2px solid red;
+}
+input:valid {
+    border: 2px solid green;
 }
