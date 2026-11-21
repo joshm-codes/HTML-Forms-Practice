@@ -12,11 +12,11 @@
     <form>
         <div>
             <label for="firstname">First Name:</label>
-            <input type="text" id="firstname" name="firstname" required>
+            <input type="text" id="firstname" name="firstname" required placeholder="John">
         </div>
         <div>
             <label for="lastname">Last Name:</label>
-            <input type="text" id="lastname" name="lastname" required>
+            <input type="text" id="lastname" name="lastname" required placeholder="Smith">
         </div>
         <div>
             <label for="username">User Name:</label>
@@ -26,7 +26,11 @@
             <label for="user-password">Password:</label>
             <input type="password" id="user-password" name="user-password" required minlength="7" maxlength="14">
         </div>
-        <button>Submit</button>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="user-email" name="user-email" required minlength="3" placeholder="example@gmail.com" >
+        </div>
+        <button type="submit">Submit</button>
     </form>
     
     
