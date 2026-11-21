@@ -9,7 +9,9 @@
 </head>
 <body>
     <h1>Practicing HTML Forms</h1>
+    <div id="firstForm">
     <form>
+        <h2>Basic Form</h2>
         <div>
             <label for="firstname">First Name:</label>
             <input type="text" id="firstname" name="firstname" required placeholder="John">
@@ -31,8 +33,37 @@
             <input type="email" id="user-email" name="user-email" required minlength="3" placeholder="example@gmail.com" >
         </div>
         <button type="submit">Submit</button>
+
     </form>
+    </div>
+
+   <div id="secondForm">
     
+    <h2>Radio Buttons: Book A Table</h2>
+        <form method="POST">
+            <fieldset id="size">
+                <label>
+                    <input type="radio" value="2" name="size"> Two Person Table
+                </label>
+                <label>
+                    <input type="radio" value="4" name="size" checked> Four Person Table 
+                </label>
+                <label>
+                    <input type="radio" value="6" name="size"> Six Person Table
+                </label>
+            </fieldset>
+            <fieldset id="location">
+                <label>
+                    <input type="radio" value="indoors" name="location" checked> Indoor
+                </label>
+                <label>
+                    <input type="radio" value="outdoors" name="location"> Outdoors
+                </label>
+            </fieldset>
+            <button type="submit">Book Table</button>
+        </form>
+    
+   </div>
     
 </body>
 </html>

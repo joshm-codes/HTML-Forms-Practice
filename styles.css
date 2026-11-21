@@ -1,8 +1,13 @@
 body{
     background-color: aliceblue;
 }
-h1{
+
+h1,h2{
     text-align: center;
+    text-decoration: underline;
+}
+#firstForm,#secondForm{
+    border: 2px solid blue;
 }
 form{
     text-align: center;
@@ -17,6 +22,7 @@ button{
     font: 1em sans-serif;
     padding: 5px;
     border-radius: 5px;
+    margin-top: 10px;
     transition: transform 0.2s ease;
 }
 button:hover{
@@ -29,4 +35,10 @@ input:invalid{
 }
 input:valid {
     border: 2px solid green;
+}
+
+#size,#location{
+    border: none;
+    padding: 10px;
+    margin-bottom: 10px;
 }
