@@ -6,7 +6,7 @@ h1,h2{
     text-align: center;
     text-decoration: underline;
 }
-#firstForm,#secondForm, #passWordForm{
+#firstForm,#secondForm, #passWordForm,#fieldsetForm{
     border: 2px solid blue;
     margin: 20px auto;
     padding: 15px;
@@ -88,12 +88,27 @@ textarea{
     margin-bottom: 15px;
 }
 
-#passWordForm label{
+#passWordForm label,#fieldsetForm label{
     padding: 15px;
 }
-#passWordForm input{
+#passWordForm input,#fieldsetForm input{
     margin: 5px;
 }
-#passWordForm button{
+#passWordForm button,#fieldsetForm button{
     margin-top: 20px;
+}
+#fieldsetForm{
+    text-align: center;
+}
+#fieldsetForm legend{
+    font-size: 25px;
+    font-weight: bold;
+    padding-bottom: 15px;
+    text-decoration: underline;
+}
+#fieldsetForm label {
+    display: inline-block;
+    width: 120px;
+    text-align: right;
+    padding-right: 10px;
 }
