@@ -8,6 +8,7 @@
    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!--
     <h1>Practicing HTML Forms</h1>
     <div id="firstForm">
     <form>
@@ -67,17 +68,17 @@
             <form method="POST">
                 <div>
                     <label for="booking_date">Booking Date:</label>
-                    <input type="date" id="booking_date" name="booking_date"> <!--type="date" -> date picker-->
+                    <input type="date" id="booking_date" name="booking_date"> type="date" -> date picker
                 </div>
                 <div>
                     <label for="booking_people">Number of People:</label>
                     <input type="range" id="booking_people" name="booking_people" min="1" max="10" value="4" oninput="this.nextElementSibling.value =this.value"> <!--type="range" ->slider (oninput - JS to adjust slider values)-->
-                    <output>4</output><!--default value for slider-->
+                    <output>4</output><!--default value for slider--
                 </div>
                 <div>
                     <label for="booking_location">Location:</label>
                     <input id="booking_location" name="booking_location" list="locations">
-                    <datalist id="locations"> <!--autocomplete suggestions-->
+                    <datalist id="locations"> <!--autocomplete suggestions--
                         <option value="Eastside"></option>
                         <option value="Westend"></option>
                         <option value="Dupont Square"></option>
@@ -89,7 +90,7 @@
 
                 <div>
                     <label for="booking_location-2">New Locations:</label>
-                    <select name="locations2" id="locations2"><!--dropdown menu-->
+                    <select name="locations2" id="locations2"><!--dropdown menu--
                         <option value="other">Other</option>
                         <option value="North St">North St.</option>
                         <option value="Sprinfield Ave">Springfield Ave</option>
@@ -148,8 +149,27 @@
         <button type="submit">Submit</button>
 
     </div>
+-->
     
+    <!--CSS Practice-->
+
+    <div class ="flex-container">
+        <div class="box box1">One..</div>
+        <div class="box box2">Two..</div>
+        <div class="box box3">Three..</div>
+        <div class="box box4">Four..</div>
+        <div class="box box5">Five..</div>
+        <div class="box box6">Six..</div>
+        <div class="box box7">Seven..</div>
+    </div>
     
+    <div class="navBar">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Start</a></li>
+        <li><a href="#">GO</a></li>
+        <li><a href="#">Back</a></li>
+        <li><a href="#">Bottom</a></li>
+    </div>
     
 </body>
 </html>
