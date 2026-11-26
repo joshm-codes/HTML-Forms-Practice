@@ -6,6 +6,7 @@ h1,h2{
     text-align: center;
     text-decoration: underline;
 }
+/* == Forms == */
 #firstForm,#secondForm, #passWordForm,#fieldsetForm{
     border: 2px solid blue;
     margin: 20px auto;
@@ -97,6 +98,8 @@ textarea{
 #passWordForm button,#fieldsetForm button{
     margin-top: 20px;
 }
+
+
 #fieldsetForm{
     text-align: center;
 }
@@ -113,6 +116,11 @@ textarea{
     padding-right: 10px;
 }
 
+/* === End Forms === */
+
+/* === Flex Box Styles ===*/
+
+/* Flex Container */
 .flex-container{
     display: flex;
     justify-content: center;
@@ -121,7 +129,7 @@ textarea{
     align-items: flex-end;
     background-color: blue;
     border-radius: 5px;
-    margin: 40px;
+    margin: 100px ;
     gap: 10px;
 }
 
@@ -135,6 +143,8 @@ textarea{
     background-color: red;
     align-self: self-start;
 }
+
+/* Navigation Bar */
 .navBar{
     display: flex;
     justify-content: center;
@@ -144,15 +154,14 @@ textarea{
     background-color: blue;
     border-radius: 5px;
     padding: 25px;
-    margin: 40px;
+    margin: 100px;
     gap: 10px;
 }
 .navBar ul{
     list-style: none;
     display: flex;
-    padding: 0;
-    margin: 0;
-    gap: 1rem;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 .navBar li a{
     color: orange;
@@ -160,12 +169,12 @@ textarea{
     background-color: aliceblue;
     border-radius: 5px;
     padding: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
 }
 
+/* Horizontal Flex Chart */
 .dishes{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     font-size: 24px;
     text-decoration: underline;
@@ -173,7 +182,7 @@ textarea{
     background-color: aqua;
     border-radius: 5px;
     padding: 25px;
-    margin: 40px;
+    margin: 100px;
 }
 
 .dishes .label{
@@ -192,6 +201,9 @@ textarea{
     justify-content: center;
     align-items: cneter;
 }
+.dish{
+    margin: 0;
+}
 
 .pasta{
     background-color: red;
@@ -202,3 +214,36 @@ textarea{
 .burrito{
     background-color: green;
 }
+
+/* Vertical Flex Chart */
+.columns{
+    display: flex;
+    flex-wrap: wrap;
+    height: 400px;
+    max-width: 600px;
+    background-color: beige;
+    align-items: stretch;
+    border: 2px solid rgb(0,0,0);
+    border-radius: 5px;
+    padding: 25px;
+    margin: 100px auto;
+}
+.containerTwo{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-end;
+}
+.bar{
+    border-right: 1px solid white;
+    margin: 0;
+}
+.male{
+    background: #495e57;
+}
+.female{
+    background: #F4ce14;
+}
+
+/* === End Flex Box Styles === */

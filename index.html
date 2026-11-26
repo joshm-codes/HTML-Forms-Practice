@@ -8,7 +8,7 @@
    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!--
+   
     <h1>Practicing HTML Forms</h1>
     <div id="firstForm">
     <form>
@@ -73,12 +73,12 @@
                 <div>
                     <label for="booking_people">Number of People:</label>
                     <input type="range" id="booking_people" name="booking_people" min="1" max="10" value="4" oninput="this.nextElementSibling.value =this.value"> <!--type="range" ->slider (oninput - JS to adjust slider values)-->
-                    <output></output><!--default value for slider--
+                    <output></output><!--default value for slider-->
                 </div>
                 <div>
                     <label for="booking_location">Location:</label>
                     <input id="booking_location" name="booking_location" list="locations">
-                    <datalist id="locations"> <--autocomplete suggestions--
+                    <datalist id="locations"> <!--autocomplete suggestions-->
                         <option value="Eastside"></option>
                         <option value="Westend"></option>
                         <option value="Dupont Square"></option>
@@ -90,7 +90,7 @@
 
                 <div>
                     <label for="booking_location-2">New Locations:</label>
-                    <select name="locations2" id="locations2"><!--dropdown menu--
+                    <select name="locations2" id="locations2"><!--dropdown menu-->
                         <option value="other">Other</option>
                         <option value="North St">North St.</option>
                         <option value="Sprinfield Ave">Springfield Ave</option>
@@ -149,7 +149,7 @@
         <button type="submit">Submit</button>
 
     </div>
--->
+
     
     <!--CSS Practice-->
 
@@ -181,6 +181,27 @@
             <div class="dish burrito" style="flex-basis: 15%;">Burrito: 15%</div>
         </div>
     </div>
+
+    <div class="columns">
+        <div class="containerTwo">
+            <div class="bar male" style="flex-basis: 25%;">male</div>
+            <div class="bar female" style="flex-basis: 20%;">female</div>
+        </div>
+        <div class="containerTwo">
+            <div class="bar male" style="flex-basis: 45%;">male</div>
+            <div class="bar female" style="flex-basis: 40%;">female</div>
+        </div>
+        <div class="containerTwo">
+            <div class="bar male" style="flex-basis: 15%;">male</div>
+            <div class="bar female" style="flex-basis: 50%;">female</div>
+        </div>
+        <div class="containerTwo">
+            <div class="bar male" style="flex-basis: 5%;">male</div>
+            <div class="bar female" style="flex-basis: 60%;">female</div>
+        </div>
+    </div>
+
+
     
 </body>
 </html>
