@@ -73,12 +73,12 @@
                 <div>
                     <label for="booking_people">Number of People:</label>
                     <input type="range" id="booking_people" name="booking_people" min="1" max="10" value="4" oninput="this.nextElementSibling.value =this.value"> <!--type="range" ->slider (oninput - JS to adjust slider values)-->
-                    <output>4</output><!--default value for slider--
+                    <output></output><!--default value for slider--
                 </div>
                 <div>
                     <label for="booking_location">Location:</label>
                     <input id="booking_location" name="booking_location" list="locations">
-                    <datalist id="locations"> <!--autocomplete suggestions--
+                    <datalist id="locations"> <--autocomplete suggestions--
                         <option value="Eastside"></option>
                         <option value="Westend"></option>
                         <option value="Dupont Square"></option>
@@ -164,11 +164,22 @@
     </div>
     
     <div class="navBar">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Start</a></li>
-        <li><a href="#">GO</a></li>
-        <li><a href="#">Back</a></li>
-        <li><a href="#">Bottom</a></li>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#start">Start</a></li>
+            <li><a href="#go">GO</a></li>
+            <li><a href="#back">Back</a></li>
+            <li><a href="#bottom">Bottom</a></li>
+        </ul>
+    </div>
+
+    <div class="dishes">
+        <div class="label">Preferred dishes:</div>
+        <div class="container">
+            <div class="dish pasta" style="flex-basis: 35%;">Pasta: 35%</div>
+            <div class="dish pizza" style="flex-basis: 50%;">Pizza: 50%</div>
+            <div class="dish burrito" style="flex-basis: 15%;">Burrito: 15%</div>
+        </div>
     </div>
     
 </body>
