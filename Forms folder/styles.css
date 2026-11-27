@@ -1,0 +1,124 @@
+body{
+    background-color: aliceblue;
+}
+
+h1,h2{
+    text-align: center;
+    text-decoration: underline;
+}
+/* == Forms == */
+#firstForm,#secondForm, #passWordForm,#fieldsetForm{
+    border: 2px solid blue;
+    margin: 20px auto;
+    padding: 15px;
+    width: 80%;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.575);
+}
+#secondForm label{
+    color: darkblue;
+}
+input,
+select{
+    padding: 5px;
+    border-radius: 10px;
+}
+input[type=radio]{
+    accent-color:darkblue;
+}
+form{
+    text-align: center;
+    padding: 5px;
+}
+div{
+    font: 1em sans-serif;
+    margin: 15px;
+    padding: 5px;
+}
+button{
+    background-color: darkblue;
+    color: white;
+    border: white;
+    font: 1em sans-serif;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    transition: transform 0.2s ease;
+}
+button:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    background-color: royalblue;
+}
+input:invalid{
+    border: 2px solid red;
+}
+input:valid {
+    border: 2px solid darkblue;
+}
+
+#size,#location{
+    border: none;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+input[type=date]{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+    width: 12%;
+    padding: 0.5em;
+    border-color: darkblue;
+    border-radius: 10px;
+}
+input[type=range]{
+    width: 200px;
+    accent-color: darkblue;
+}
+textarea{
+    font-size: 0.8rem;
+  letter-spacing: 1px;
+  padding: 10px;
+  max-width: 100%;
+  line-height: 1.5;
+  border-radius: 5px;
+  border: 1px solid #cccccc;
+  box-shadow: 1px 1px 1px #999999;
+}
+#reviewArea label{
+    display:block;
+    margin-bottom: 15px;
+}
+
+#passWordForm label,#fieldsetForm label{
+    padding: 15px;
+}
+#passWordForm input,#fieldsetForm input{
+    margin: 5px;
+}
+#passWordForm button,#fieldsetForm button{
+    margin-top: 20px;
+}
+
+
+#fieldsetForm{
+    text-align: center;
+}
+#fieldsetForm legend{
+    font-size: 25px;
+    font-weight: bold;
+    padding-bottom: 15px;
+    text-decoration: underline;
+}
+#fieldsetForm label {
+    display: inline-block;
+    width: 120px;
+    text-align: right;
+    padding-right: 10px;
+}
+
+/* === End Forms === */
+
+
+
+/* === Grid ===*/
+
