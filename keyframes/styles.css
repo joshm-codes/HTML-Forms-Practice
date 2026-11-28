@@ -1,0 +1,87 @@
+.clock{
+    position: relative;
+    height: 300px;
+    width: 300px;
+    align-items: center;
+    background-color: blue;
+    border: 2px solid black;
+    border-radius: 50%;
+}
+.center-dot{
+    position: absolute;
+
+    width: 12px;
+    height: 12px;
+
+    background: black;
+    border-radius: 50%;
+
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+}
+/*shared hand styles */
+.hand{
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+
+    transform-origin: bottom center;
+}
+.number{
+    position: absolute;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.twelve{
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.three{
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+}
+.six{
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.nine{
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+}
+/*seconds hand*/
+.seconds{
+    width: 2px;
+    height: 130px;
+
+    background-color: antiquewhite;
+
+    animation: cycle 60s infinite linear;
+}
+/* Minutes hand */
+.minutes{
+    width: 4px;
+    height: 110px;
+
+    background-color: black;
+
+    animation: cycle 3600s infinite linear;
+}
+/* hour hand */
+.hours{
+    width: 6px;
+    height: 75px;
+
+    background-color: red;
+
+    animation: cycle 43200s infinite linear;
+}
+@keyframes cycle{
+    from {transform: translateX(-50%) rotate(0deg);}
+    to{transform: translateX(-50%) rotate(360deg);}
+}

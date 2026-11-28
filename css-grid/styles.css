@@ -92,3 +92,54 @@ footer{
     background-color: lightgreen;
     grid-column: 2/ span 7 ;
 }
+
+/*another grid example*/
+.container{
+    display: grid;
+    min-height: 50vh;
+    max-width: 900px;
+    background-color: wheat;
+    grid-template-columns: 200px 1fr 200px;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: "header header header" 
+                         "left main right" 
+                         "footer footer footer";
+    border: 5px solid wheat;
+    border-radius: 5px;
+    margin: 100px auto;
+}
+
+.header {
+    grid-area: header;
+    padding: 10px;
+    background-color:black;
+    color: #fff;
+    text-align: center;
+}
+  
+.main{
+    grid-area: main;
+    padding:25px;
+}  
+
+.left {
+    grid-area: left;
+    background-color: rgb(221, 19, 19);
+  }
+  
+.right {
+    grid-area: right;
+  }
+  
+.footer {
+    grid-area: footer;
+    padding: 10px;
+    background-color:black;
+    color: #fff;
+    text-align: center;
+  }
+  
+.sidebar {
+    padding: 25px;
+    background-color:darkcyan;
+  }
